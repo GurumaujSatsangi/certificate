@@ -16,7 +16,7 @@ submitBtn.addEventListener("click", () => {
       }
 });
 const generatePDF = async (name) => {
-    const existingPdfBytes = await fetch("IDY2022.pdf").then((res) =>
+    const existingPdfBytes = await fetch("CoPIDY.pdf").then((res) =>
       res.arrayBuffer()
     );
 
@@ -26,7 +26,7 @@ const generatePDF = async (name) => {
 
     
   //get font
-  const fontBytes = await fetch("Sanchez-Regular.ttf").then((res) =>
+  const fontBytes = await fetch("ArianaVioleta-dz2K.ttf").then((res) =>
   res.arrayBuffer()
 );
   // Embed our custom font in the document
