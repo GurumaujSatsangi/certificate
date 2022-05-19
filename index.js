@@ -16,7 +16,7 @@ submitBtn.addEventListener("click", () => {
       }
 });
 const generatePDF = async (name) => {
-    const existingPdfBytes = await fetch("Certificate.pdf").then((res) =>
+    const existingPdfBytes = await fetch("IDY2022.pdf").then((res) =>
       res.arrayBuffer()
     );
 
@@ -46,6 +46,6 @@ const generatePDF = async (name) => {
  
   // Serialize the PDFDocument to bytes (a Uint8Array)
   const pdfDataUri = await pdfDoc.saveAsBase64({ dataUri: true });
-  saveAs(pdfDataUri,"newcertificate.pdf")
+  saveAs(pdfDataUri,"IDY2022-CoP.pdf")
 };
 
